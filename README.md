@@ -4,6 +4,9 @@ yarn add @chakra-ui/react @chakra-ui/core @emotion/react @emotion/styled framer-
 ## Para instalar biblioteca de icones dentro do projeto
 # yarn add react-icons
 
+## integrando biblioteca de gráficos
+# yarn add apexcharts react-apexcharts
+
 
 
 
