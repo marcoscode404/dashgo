@@ -77,7 +77,9 @@ export function Header() {
                     </Box>
 
                     <Avatar
-                        size="md" name="Marcos Vini" src=""
+                        size="md"
+                        name="Marcos Vini"
+                        src="https://github.com/marcoscode404.png" 
                     />
 
 
