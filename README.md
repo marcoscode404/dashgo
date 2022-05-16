@@ -1,8 +1,8 @@
 para instalar o chakra UI
 yarn add @chakra-ui/react @chakra-ui/core @emotion/react @emotion/styled framer-motion
 
-
-
+## Para instalar biblioteca de icones dentro do projeto
+# yarn add react-icons
 
 
 
