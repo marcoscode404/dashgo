@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/51343240/168535025-c18eb8e8-0efa-4a89-a72c-18510543880f.png)
+
+
 para instalar o chakra UI
 yarn add @chakra-ui/react @chakra-ui/core @emotion/react @emotion/styled framer-motion
 
