@@ -15,7 +15,8 @@ yarn add @chakra-ui/react @chakra-ui/core @emotion/react @emotion/styled framer-
 # yarn add react-hook-form
 
 
-
+## instalando biblioteca do yup para mostrar mensagens de erros
+# yarn add yup @hookform/resolvers
 
 
 
