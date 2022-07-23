@@ -36,9 +36,11 @@ type CreateUserFormData = {
 
 export default function CreateUser() {
 
-    const { register, handleSubmit, formState, errors} = useForm({
+    const { register, handleSubmit, formState} = useForm({
         resolver: yupResolver(createUserFormSchema)
     })
+
+    const { errors } = formState
 
 
     const handleCreateUser: SubmitHandler<CreateUserFormData> = async (values) => {
@@ -65,16 +67,17 @@ export default function CreateUser() {
                     <VStack spacing="8">
                         <SimpleGrid minChildWidth="240px" spacing={["4", "8"]} w="100%">
                            <Input 
-                                name="name" 
+                                name="name"
+                                type="name"
                                 label="Nome Completo"  
-                                error={formState.errors.name}
+                                error={errors.name}
                                 {...register('name')} 
                             />
                            <Input 
                                 name="email" 
                                 type="email" 
                                 label="E-mail"
-                                error={formState.errors.email}
+                                error={errors.email}
                                 {...register('email')}  
                             /> 
                         </SimpleGrid> 
@@ -84,14 +87,14 @@ export default function CreateUser() {
                                 name="password" 
                                 type="password" 
                                 label="Senha"  
-                                error={formState.errors.password}
+                                error={errors.password}
                                 {...register('password')}  
                             />
                            <Input 
                                 name="password_confirmation" 
                                 type="password" 
                                 label="Confirmação da senha"  
-                                error={formState.errors.password_confirmation}
+                                error={errors.password_confirmation}
                                 {...register('password_confirmation')}  
                             /> 
                         </SimpleGrid> 
